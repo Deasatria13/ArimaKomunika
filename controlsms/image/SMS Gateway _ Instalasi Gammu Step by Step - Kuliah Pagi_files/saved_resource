@@ -1,0 +1,23 @@
+var _BASE_URL = 'https://www1.adsensecamp.com/show/';
+var style = new Array();
+style['1w']=728;style['1h']=90;style['2w']=450;style['2h']=80;style['3w']=120;style['3h']=600;style['4w']=162;style['4h']=600;style['5w']=300;style['5h']=260;style['6w']=125;style['6h']=125;style['7w']=234;style['7h']=60;style['8w']=180;style['8h']=150;style['9w'] =120;style['9h']=240;style['10w']=200;style['10h']=200;style['11w']=250;style['11h']=250;style['12w']=336;style['12h']=280;style['13w']=234;style['13h']=100;style['14w']=728;style['14h']=15;style['15w']=180;style['15h']=150;style['16w']=200;style['16h']=90;style['17w']=180;style['17h']=90;style['18w']=160;style['18h']=90;style['19w']=120;style['19h']=90;
+var stuff = new Array();
+stuff['id'] = '/cjC1yFKeDM=';
+stuff['cid'] = '1mKE6FR8OXo=';
+stuff['chan'] = '8Z3FgYC3agE=';
+stuff['title'] = '3D81EE';
+stuff['text'] = '000000';
+stuff['background'] = 'FFFFFF';
+stuff['border'] = '000000';
+stuff['url'] = '2BA94F';
+stuff['type'] = '2';
+
+if( stuff['id'] != "" && stuff['chan'] != "" ){
+	type	= intval( stuff['type'] );
+	if( type < 1 || type > 16 ) type= 4;
+	document.write('<ifr' + 'ame src=' + '"'+ _BASE_URL +'frame.php?id='+ escape(stuff['id'])+'&cid='+ stuff['cid']+'&chan='+ stuff['chan']+'&type='+ type +'&title='+ stuff['title']+'&text='+ stuff['text']+'&background='+ stuff['background']+'&border='+ stuff['border']+'&url='+ stuff['url']+'&REF='+ escape('http://aksauncp.blogspot.com/2013/10/sms-gateway-instalasi-gammu-step-by-step.html') +'"' + ' marginwidth="0" marginheight="0" width=' + '"'+ style[type+'w']+'"' + ' height=' + '"'+ style[type+'h']+'"' + ' border="0" frameborder="0" style="border:none;" scrolling="no"></iframe>');
+}
+
+function getUrlVars() { var map = {}; var parts = window.location.search.replace(/[?&]+([^=&]+)(=[^&]*)?/gi, function(m,key,value) { map[key] = (value === undefined) ? '' : value.substring(1); }); return map; }
+function intval (mixed_var, base) { var type = typeof(mixed_var); if (type === 'boolean') { return (mixed_var) ? 1 : 0; } else if (type === 'string') { tmp = parseInt(mixed_var, base || 10); return (isNaN(tmp) || !isFinite(tmp)) ? 0 : tmp; } else if (type === 'number' && isFinite(mixed_var)) { return Math.floor(mixed_var); } else {return 0; } }
+

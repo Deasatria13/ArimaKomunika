@@ -1,0 +1,27 @@
+[gammu]
+# PORT
+port = com4
+# KONEKSI MODEM
+connection = at115200
+
+[smsd]
+service = mysql
+logfile = C:/xampp/htdocs/Arima_Komunika1/controlsms/gammu/bin/mysmsdlog
+debuglevel = 0
+phoneid = Modem1
+commtimeout = 30
+sendtimeout = 30
+deliveryreport = yes
+send = yes
+receive = yes
+checksecurity = 0
+#PIN = 1234
+
+# KONEKSI MYSQL
+pc = localhost
+# USER DATABASE
+user = root
+# PASSWORD DATABASE
+password = 
+# DATABASE
+database = smsku

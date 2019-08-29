@@ -1,0 +1,1 @@
+START gammu-smsd -c mysmsdrc -n gammuSMSD -u
